@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kigyo.FXMLDocumentController">
+   <children>
+      <Pane id="gamepane" fx:id="gamepane" layoutX="316.0" layoutY="217.0" prefHeight="700.0" prefWidth="850.0" style="-fx-background-color:BLACK;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox blendMode="RED" fx:id="snakeb" id="snakeb" layoutX="84.0" layoutY="97.0" prefHeight="103.0" prefWidth="29.0" />
+         </children></Pane>
+      <AnchorPane id="startpane" fx:id="startpane" prefHeight="700.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField id="player" fx:id="player" layoutX="234.0" layoutY="356.0" prefHeight="52.0" prefWidth="384.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="121.0" prefHeight="128.0" prefWidth="520.0" text="KIGYO JÁTÉK" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="50.0" />
+               </font>
+            </Label>
+            <Button id="start" fx:id="start" layoutX="314.0" layoutY="426.0" mnemonicParsing="false" onAction="#start" prefHeight="52.0" prefWidth="223.0" text="KEZDÉS" />
+            <Label alignment="BOTTOM_CENTER" layoutX="151.0" layoutY="298.0" prefHeight="52.0" prefWidth="548.0" text="Adja meg a nevét:">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane id="errorp" fx:id="errorp" layoutX="175.0" layoutY="228.0" prefHeight="230.0" prefWidth="504.0" style="-fx-background-color:ORANGE;" visible="false">
+         <children>
+            <Label alignment="CENTER" prefHeight="128.0" prefWidth="504.0" text="Nevet kötelező megadni!" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Rockwell Extra Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button id="errorb" fx:id="errorb" alignment="CENTER" layoutX="158.0" layoutY="145.0" mnemonicParsing="false" onAction="#errorb" prefHeight="62.0" prefWidth="178.0" text="OK!" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
